@@ -17,8 +17,8 @@ import cv2
 import serial
 from twilio.rest import Client
 
-account_sid = 'ACa2c2dea3ff299d44d2d3d324d8e5a6ab'
-auth_token = 'ad18b13ae416e665ae72a8d27c5e5b86'
+account_sid = 'AC*******************************b'
+auth_token = 'ad*****************************6'
 client = Client(account_sid, auth_token)
 
 
@@ -145,8 +145,8 @@ while True:
 						message = client.messages \
 						.create(
 							body="Drowsy driver Detected",
-							from_='+13239920320',
-							to='+919769948593' 
+							from_='+13********0',
+							to='+91*********3' 
 							)
 						print(message.sid)
 						sms = 0
